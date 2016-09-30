@@ -12,3 +12,11 @@ class NemonicoScraperItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     nemonico = scrapy.Field()
+
+
+class PriceScraperItem(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    nemonico = scrapy.Field()
+    closing_price = scrapy.Field()
+    price_date = scrapy.Field()
