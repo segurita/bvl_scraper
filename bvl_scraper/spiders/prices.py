@@ -23,7 +23,7 @@ class PricesSpider(scrapy.Spider):
             )
             yield Request(
                 url,
-                meta={'nemonico': nemonico},
+                meta=nemonico,
                 callback=self.parse,
             )
 
